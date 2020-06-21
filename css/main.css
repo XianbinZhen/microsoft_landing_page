@@ -15,8 +15,8 @@ li {
 }
 .container {
 	width: 85%;
-	background-color: #f1f1f1;
 	margin: auto;
+	padding: 10px;
 }
 
 /* nav bar section*/
@@ -132,12 +132,95 @@ li {
 .promotion .promotion-save .promotion-save-items a {
 	text-align: left;
 }
+
+/* united */
+
+.united {
+	background-color: black;
+	color: white;
+	height: 40vh;
+	text-align: center;
+}
+
+.united h1 {
+	padding-top: 20vh;
+}
+
+.united a i {
+	margin-left: 10px;
+}
+
+/* customer service*/
+
+.customer {
+	background: url("../imgs/customerservices.webp") center center;
+	height: 30vh;
+	color: var(--color-light);
+}
+.customer .customer-service {
+	width: 45%;
+	padding: 20px 0 0 30px;
+}
+
+.customer .customer-service a i,
+.customer .customer-service a {
+	margin-left: 10px;
+}
+
+/* follow */
+
+.follow p {
+	display: flex;
+	font-size: 1.5rem;
+	margin-left: 10px;
+	padding: 10px;
+}
+
+.follow p i {
+	margin-left: 10px;
+	font-size: 2rem;
+}
+
+/* footer */
+
+.footer {
+	padding: 0 10px;
+	background-color: var(--color-light);
+}
+.footer .footer-top {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+}
+
+.footer .footer-top ul li {
+	margin-bottom: 5px;
+}
+
+.footer .footer-top ul li:first-child {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.footer .footer-bottom {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer .footer-bottom ul {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.footer .footer-bottom ul li {
+	margin-right: 10px;
+}
+
 /* util */
 
 .btn {
 	text-decoration: none;
-	color: var(--color-light);
-	background-color: var(--color-dark);
 	padding: 0.8rem;
 	border: none;
 	border-radius: 1px;
@@ -146,23 +229,56 @@ li {
 	display: inline-block;
 }
 
-.btn-secondary {
-	text-decoration: none;
-	color: var(--color-dark);
-	padding: 0.2rem;
-	border: none;
-	border-radius: 1px;
-	font-weight: bold;
-	font-size: 16px;
-	display: inline-block;
-	margin-bottom: 2px;
+.btn-dark {
+	color: var(--color-light);
+	background-color: var(--color-dark);
 }
 
 .btn:hover {
-	opacity: 0.9;
+	opacity: 0.8;
 }
 
 .btn-secondary:hover {
 	opacity: 0.9;
 	border-bottom: 2px var(--color-dark) solid;
+}
+
+.btn-light {
+	color: var(--color-dark);
+	background-color: var(--color-light);
+}
+
+.btn-light:hover,
+.btn-light-no-bg:hover {
+	border-bottom: 2px var(--color-dark) solid;
+}
+
+.btn-blue {
+	color: darkblue;
+}
+
+.btn-light-no-bg {
+	color: var(--color-light);
+}
+
+@media (max-width: 1000px) {
+	.promotion .promotion-save {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.footer .footer-top {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media (max-width: 700px) {
+	.container {
+		width: 100%;
+	}
+	.promotion .promotion-save {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.promotion .promotion-shop,
+	.footer .footer-top {
+		grid-template-columns: repeat(2, 1fr);
+	}
 }
