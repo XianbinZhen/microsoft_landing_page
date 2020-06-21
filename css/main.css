@@ -1,56 +1,168 @@
 /* global*/
-
-
-a{
-    text-decoration: none;
-    color: black;
+:root {
+	--color-primary: #c42847;
+	--color-secondary: #e28413;
+	--color-light: #fbf5f3;
+	--color-dark: #000022;
+}
+a {
+	text-decoration: none;
+	color: black;
 }
 
-li{
-    list-style: none;
+li {
+	list-style: none;
+}
+.container {
+	width: 85%;
+	background-color: #f1f1f1;
+	margin: auto;
 }
 
 /* nav bar section*/
-.navbar{
-    border:1px solid black;
-    display: flex;
-    width: 85%;
-    margin:auto;
-    justify-content: space-between;
-    padding: 10px;
 
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
 }
 .navbar .navbar-left {
-    display: flex;
+	display: flex;
 }
 
 .navbar .navbar-left {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 10px;
-
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 10px;
 }
-.navbar .navbar-left li{
-    margin-right: 1rem;
-}
-
-.navbar .navbar-left img{
-    width: 107px;
-    height: 23px;
-    margin-right: 1rem;
+.navbar .navbar-left li {
+	margin-right: 1rem;
 }
 
-
-.navbar .navbar-right{
-    display:flex;
-    margin-right: 20px;
-    justify-content: center;
-    align-items: center;
+.navbar .navbar-left img {
+	width: 107px;
+	height: 23px;
+	margin-right: 1rem;
 }
 
-
-.navbar .navbar-right li{
-    margin-right: 1rem
+.navbar .navbar-right {
+	display: flex;
+	margin-right: 20px;
+	justify-content: center;
+	align-items: center;
 }
 
+.navbar .navbar-right li {
+	margin-right: 1rem;
+}
+
+/* show case*/
+
+#show-case {
+	width: 100%;
+	height: 400px;
+	display: flex;
+	flex-direction: column;
+	background: url("../imgs/showcase.webp") no-repeat top center;
+	justify-content: center;
+	align-items: center;
+}
+
+#show-case h1 {
+	padding-top: 120px;
+	justify-self: center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#show-case i {
+	margin-left: 10px;
+}
+
+/* promotion */
+
+.promotion .promotion-shop {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	align-items: center;
+	justify-content: center;
+	/* gap: 5px; */
+}
+
+.promotion .promotion-shop a {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 5px;
+	margin-top: 10px;
+}
+
+.promotion .promotion-shop a h3 {
+	text-align: center;
+}
+
+.promotion .promotion-shop a i {
+	font-size: 3rem;
+}
+
+.promotion .promotion-save {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	justify-content: center;
+	align-content: center;
+	gap: 2rem;
+}
+
+.promotion .promotion-save .promotion-save-items {
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+}
+
+.promotion .promotion-save .promotion-save-items img {
+	width: 200px;
+}
+
+.promotion .promotion-save .promotion-save-items a i {
+	margin-left: 10px;
+	text-align: start;
+}
+.promotion .promotion-save .promotion-save-items h3,
+.promotion .promotion-save .promotion-save-items p,
+.promotion .promotion-save .promotion-save-items a {
+	text-align: left;
+}
+/* util */
+
+.btn {
+	text-decoration: none;
+	color: var(--color-light);
+	background-color: var(--color-dark);
+	padding: 0.8rem;
+	border: none;
+	border-radius: 1px;
+	font-weight: bold;
+	font-size: 16px;
+	display: inline-block;
+}
+
+.btn-secondary {
+	text-decoration: none;
+	color: var(--color-dark);
+	padding: 0.2rem;
+	border: none;
+	border-radius: 1px;
+	font-weight: bold;
+	font-size: 16px;
+	display: inline-block;
+	margin-bottom: 2px;
+}
+
+.btn:hover {
+	opacity: 0.9;
+}
+
+.btn-secondary:hover {
+	opacity: 0.9;
+	border-bottom: 2px var(--color-dark) solid;
+}
