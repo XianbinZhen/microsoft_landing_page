@@ -15,9 +15,10 @@ li {
 }
 
 .container {
-	width: 85%;
+	font-family: Arial, Helvetica, sans-serif;
+
+	width: 1080px;
 	margin: auto;
-	padding: 10px;
 }
 
 /* nav bar section*/
@@ -78,7 +79,6 @@ li {
 #show-case h1 {
 	padding-top: 120px;
 	justify-self: center;
-	font-family: Arial, Helvetica, sans-serif;
 }
 
 #show-case p {
@@ -272,9 +272,9 @@ li {
 	color: var(--color-light);
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1080px) {
 	.container {
-		width: 90%;
+		width: 95%;
 		padding: 0;
 	}
 
@@ -297,7 +297,7 @@ li {
 		justify-content: flex-start;
 		align-items: flex-start;
 		padding: 30px;
-		transform: translateX(-500px);
+		transform: translateX(-1000px);
 		transition: transform 0.5s ease-in-out;
 	}
 
@@ -326,6 +326,7 @@ li {
 	}
 	.container {
 		width: 100%;
+		padding: 0;
 	}
 	.promotion .promotion-save {
 		grid-template-columns: repeat(1, 1fr);
