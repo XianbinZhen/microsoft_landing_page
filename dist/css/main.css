@@ -170,7 +170,7 @@ li {
 }
 .customer .customer-service {
 	width: 45%;
-	padding: 20px 0 0 30px;
+	padding: 20px 0 0 10px;
 }
 
 .customer .customer-service a i,
@@ -334,5 +334,8 @@ li {
 	.promotion .promotion-shop,
 	.footer .footer-top {
 		grid-template-columns: repeat(2, 1fr);
+	}
+	.customer .customer-service p {
+		display: none;
 	}
 }
