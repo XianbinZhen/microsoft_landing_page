@@ -165,7 +165,7 @@ li {
 
 .customer {
 	background: url("../imgs/customerservices.webp") center center;
-	height: 30vh;
+	height: 300px;
 	color: var(--color-light);
 }
 .customer .customer-service {
